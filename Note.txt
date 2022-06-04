@@ -1,0 +1,6 @@
+Can I create Netflix’s video carousel with CSS only? (https://www.youtube.com/watch?v=b--q6Fsf_cA)
+
+https://github.com/kevin-powell/netflix-carousel-css-only
+https://github.com/Annie-Huang/netflix-carousel-css-only
+
+=============================================================================================================
