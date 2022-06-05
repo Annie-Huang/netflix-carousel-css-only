@@ -53,6 +53,10 @@ svg {
 }
 
 /* media scroller */
+.media-container {
+  position: relative;
+}
+
 .media-scroller,
 .media-group {
   display: grid;
@@ -82,4 +86,24 @@ svg {
   width: 100%; /* fit into the 1fr grid-auto-columns */
   aspect-ratio: 16 / 9;
   object-fit: cover; /* make sure the image is not stretched */
+}
+
+.next,
+.previous {
+  z-index: 10;
+  position: absolute;
+  width: 3rem;
+  padding: 0 1rem;
+  background: rgb(0 0 0 / 0.2);
+}
+
+.previous {
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.next {
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
