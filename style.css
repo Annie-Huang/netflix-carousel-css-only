@@ -138,3 +138,20 @@ svg {
 .media-group:target :where(.next, .previous) {
   display: flex;
 }
+
+/* navigation indicators */
+.navigation-indicators {
+  position: absolute;
+  display: flex;
+  gap: 3px;
+
+  top: -2rem;
+  right: 2rem;
+}
+
+.navigation-indicators > * {
+  width: 1rem;
+  height: 2px;
+  background: white;
+  opacity: 0.5;
+}
