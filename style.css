@@ -140,12 +140,14 @@ svg {
 }
 
 /* navigation indicators */
+
 .navigation-indicators {
+  opacity: 0;
   position: absolute;
   display: flex;
   gap: 3px;
 
-  top: -2rem;
+  top: -1rem;
   right: 2rem;
 }
 
@@ -172,5 +174,9 @@ svg {
   opacity: 1;
 }
 .media-group:nth-child(4):target ~ .navigation-indicators > *:nth-child(4) {
+  opacity: 1;
+}
+
+.media-scroller:hover .navigation-indicators {
   opacity: 1;
 }
