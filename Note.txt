@@ -4,3 +4,5 @@ https://github.com/kevin-powell/netflix-carousel-css-only
 https://github.com/Annie-Huang/netflix-carousel-css-only
 
 =============================================================================================================
+
+chrome://flags/ -> Experimental Web Platform features

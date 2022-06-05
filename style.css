@@ -121,6 +121,7 @@ svg {
 .media-group:first-child :where(.next, .previous) {
   display: flex;
 }
+
 .media-scroller:hover :where(.next, .previous) {
   opacity: 1;
 }
@@ -143,6 +144,20 @@ svg {
 }
 .media-group:target :where(.next, .previous) {
   display: flex;
+}
+
+/* media-scroller that has a target and it's not the first child, meaning
+   http://localhost:3000/#group-2
+   http://localhost:3000/#group-3
+   http://localhost:3000/#group-4
+
+   Make the first group's next button disappear on the above 3 pages. We just need page 4 not to show the first page's next button
+*/
+.media-scroller:has(:target:not(:first-child))
+  .media-group:first-of-type
+  .next {
+  border: 2px solid blue;
+  display: none;
 }
 
 /* navigation indicators */
