@@ -62,6 +62,7 @@ svg {
 
 .media-scroller {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 
   /* The grid-auto-columns CSS property specifies the size of an implicitly-created grid column track or pattern of tracks. */
   grid-auto-columns: 100%;
