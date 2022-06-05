@@ -70,6 +70,10 @@ svg {
 
   /* The grid-auto-columns CSS property specifies the size of an implicitly-created grid column track or pattern of tracks. */
   grid-auto-columns: 100%;
+
+  /* use padding and scroll-padding-inline to give space for the prev and next button (not overlap on the first and last image in each group) */
+  padding: 0 3rem;
+  scroll-padding-inline: 3rem;
 }
 
 .media-group {
@@ -95,7 +99,7 @@ svg {
   z-index: 10;
   position: absolute;
   width: 3rem;
-  padding: 0 1rem;
+  padding: 1rem;
   background: rgb(0 0 0 / 0);
   opacity: 0;
 }
