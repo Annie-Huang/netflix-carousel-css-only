@@ -156,7 +156,21 @@ svg {
   opacity: 0.5;
 }
 
+.media-group:nth-child(1):target ~ .navigation-indicators > *:nth-child(1) {
+  opacity: 1;
+}
+
 /* If the current page target is page 2, e.g. http://localhost:3000/#group-2 Make the 2nd child of the .navigation-indicators red color */
+/* General sibling combinator
+   The ~ combinator selects siblings. This means that the second element follows the first (though not necessarily immediately), and both share the same parent.*/
 .media-group:nth-child(2):target ~ .navigation-indicators > *:nth-child(2) {
-  background: red;
+  /*background: red;*/
+  opacity: 1;
+}
+
+.media-group:nth-child(3):target ~ .navigation-indicators > *:nth-child(3) {
+  opacity: 1;
+}
+.media-group:nth-child(4):target ~ .navigation-indicators > *:nth-child(4) {
+  opacity: 1;
 }
