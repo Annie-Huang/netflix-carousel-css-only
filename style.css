@@ -179,6 +179,7 @@ svg {
   opacity: 0.5;
 }
 
+.media-scroller:not(:has(:target)) .navigation-indicators > *:nth-child(1),
 .media-group:nth-child(1):target ~ .navigation-indicators > *:nth-child(1) {
   opacity: 1;
 }
