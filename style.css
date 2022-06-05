@@ -112,3 +112,7 @@ svg {
 .media-scroller:hover :where(.next, .previous) {
   opacity: 1;
 }
+
+:where(.next, .previous):hover {
+  background: rgb(0 0 0 / 0.3);
+}
