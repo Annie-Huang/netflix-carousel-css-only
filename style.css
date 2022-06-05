@@ -51,3 +51,20 @@ svg {
 .section-title {
   margin-block: 4rem 1rem;
 }
+
+/* media scroller */
+.media-scroller,
+.media-group {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.media-scroller {
+  /* The grid-auto-columns CSS property specifies the size of an implicitly-created grid column track or pattern of tracks. */
+  grid-auto-columns: 100%;
+}
+
+.media-group {
+  grid-auto-columns: 1fr;
+  border: solid limegreen 3px;
+}
