@@ -90,6 +90,7 @@ svg {
 
 .next,
 .previous {
+  display: none;
   z-index: 10;
   position: absolute;
   width: 3rem;
@@ -122,4 +123,13 @@ svg {
 }
 :where(.next, .previous):hover > svg {
   transform: scale(1.2);
+}
+
+/* :target is the current target of your page, e.g. if you arein http://localhost:3000/#group-2, your target is #group.
+   So while you are on the page, e.g. page 2, you can see the next and previous button in page 2. But other page will not display: none */
+.media-group:target {
+  border-color: red;
+}
+.media-group:target :where(.next, .previous) {
+  display: block;
 }
