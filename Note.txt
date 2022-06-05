@@ -5,4 +5,7 @@ https://github.com/Annie-Huang/netflix-carousel-css-only
 
 =============================================================================================================
 
-chrome://flags/ -> Experimental Web Platform features
+You have to turn on the following flag before you can use ':has' selector in css.
+chrome://flags/ -> Experimental Web Platform features -> enable
+See more in
+https://caniuse.com/css-has
