@@ -91,6 +91,7 @@ svg {
 .next,
 .previous {
   display: none;
+  align-items: center;
   z-index: 10;
   position: absolute;
   width: 3rem;
@@ -131,5 +132,5 @@ svg {
   border-color: red;
 }
 .media-group:target :where(.next, .previous) {
-  display: block;
+  display: flex;
 }
