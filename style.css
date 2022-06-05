@@ -13,6 +13,7 @@ body {
   font-size: 1.25rem;
   color: white;
   background: #121212;
+  overflow-x: hidden;
 }
 
 img,
@@ -56,6 +57,7 @@ svg {
 .media-scroller,
 .media-group {
   display: grid;
+  gap: 0.25rem;
   grid-auto-flow: column;
 }
 
@@ -67,6 +69,11 @@ svg {
 .media-group {
   grid-auto-columns: 1fr;
   border: solid limegreen 3px;
+}
+
+.media-element {
+  border-radius: 0.25rem;
+  overflow: hidden;
 }
 
 .media-element > img {
