@@ -179,6 +179,10 @@ svg {
   opacity: 0.5;
 }
 
+/*
+.media-scroller:has(:not(:target)) means "has any element which is not targeted"
+.media-scroller:not(:has(:target)) means 'current page has not target'
+*/
 .media-scroller:not(:has(:target)) .navigation-indicators > *:nth-child(1),
 .media-group:nth-child(1):target ~ .navigation-indicators > *:nth-child(1) {
   opacity: 1;
