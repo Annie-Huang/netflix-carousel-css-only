@@ -130,7 +130,7 @@ svg {
   transform: scale(1.2);
 }
 
-/* :target is the current target of your page, e.g. if you arein http://localhost:3000/#group-2, your target is #group.
+/* :target is the current target of your page, e.g. if you are in http://localhost:3000/#group-2, your target is #group.
    So while you are on the page, e.g. page 2, you can see the next and previous button in page 2. But other page will not display: none */
 .media-group:target {
   border-color: red;
@@ -154,4 +154,9 @@ svg {
   height: 2px;
   background: white;
   opacity: 0.5;
+}
+
+/* If the current page target is page 2, e.g. http://localhost:3000/#group-2 Make the 2nd child of the .navigation-indicators red color */
+.media-group:nth-child(2):target ~ .navigation-indicators > *:nth-child(2) {
+  background: red;
 }
