@@ -94,7 +94,8 @@ svg {
   position: absolute;
   width: 3rem;
   padding: 0 1rem;
-  background: rgb(0 0 0 / 0.2);
+  background: rgb(0 0 0 / 0);
+  opacity: 0;
 }
 
 .previous {
@@ -106,4 +107,8 @@ svg {
   right: 0;
   top: 0;
   bottom: 0;
+}
+
+.media-scroller:hover :where(.next, .previous) {
+  opacity: 1;
 }
