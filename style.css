@@ -53,6 +53,7 @@ svg {
 }
 
 /* media scroller */
+
 .media-container {
   position: relative;
 }
@@ -115,6 +116,11 @@ svg {
   bottom: 0;
 }
 
+/* Make the first media-group's next or .previous button always show there.
+   Any since first group doesn't have prev button it means its next button is always there. Even when we are on page 4. */
+.media-group:first-child :where(.next, .previous) {
+  display: flex;
+}
 .media-scroller:hover :where(.next, .previous) {
   opacity: 1;
 }
